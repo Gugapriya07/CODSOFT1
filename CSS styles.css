@@ -1,0 +1,267 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff6e61);
+  color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex; /* Use flexbox to align the image and text horizontally */
+  align-items: center; /* Center the text and image vertically */
+  gap: 10px; /* Add spacing between the text and the image */
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Keep the rounded shape */
+  border: 2px solid white;
+  order: 0; /* Move the image to the right of the text */
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  order: 0; /* Keep the text to the left of the image */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: white;
+  color: #ff758c;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem 5%; /* Reduced padding */
+  color: rgb(0, 0, 0);
+  background: url('https://www.figma.com/community/resource/f7ca00e1-db49-44cc-bc98-d8a9f7d79f6e/thumbnail') no-repeat center/cover; /* Replace with your image URL */
+  position: relative;
+  min-height: 80vh; /* Adjusted height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center horizontally */
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1rem; /* Adjust spacing */
+}
+
+.hero a.btn {
+  margin-top: 1rem;
+}
+
+/* White Section with Background Image */
+.features {
+  padding: 5rem 5%; /* Increased padding for space */
+  background: url('https://www.figma.com/community/resource/f7ca00e1-db49-44cc-bc98-d8a9f7d79f6e/thumbnail') no-repeat center/cover; /* Replace with your image */
+  text-align: center;
+  background-color: white; /* Fallback color */
+  min-height: 50vh; /* Ensures enough height for the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.features p {
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* About Section */
+.about {
+  padding: 3rem 5%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(180deg, #ff758c, #f9f9f9);
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+}
+
+.about-text ul {
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff6e61);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.read-more-content {
+  display: none;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.services {
+  padding: 3rem 5%;
+  background: #fff6f8;
+  text-align: center;
+}
+
+.service-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 20%;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Services Section 2*/
+.services {
+  padding: 3rem 5%;
+  background: #fff6f8;
+  text-align: center;
+}
+
+.service-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1rem; /* Padding for text inside the box */
+  width: 500%;
+  height: 500px; /* Adjust height as needed for the background image */
+  color: rgb(0, 0, 0); /* To make text visible over images */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background images for each card */
+.service-card:nth-child(1) {
+  background-image: url('https://i.pinimg.com/564x/e5/50/09/e550098cef819326fca8d1d5f9057497.jpg'); /* Replace with your image URL */
+}
+
+.service-card:nth-child(2) {
+  background-image: url('https://t4.ftcdn.net/jpg/04/78/08/31/360_F_478083183_6CQZKaiML4lyTBKOx450KCRkU0aExkVH.jpg'); /* Replace with your image URL */
+}
+
+.service-card:nth-child(3) {
+  background-image: url('https://img.freepik.com/free-vector/maintenance-background-design_1294-45.jpg?semt=ais_hybrid'); /* Replace with your image URL */
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* "Learn More" Button Styling */
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 2rem; /* Adjust spacing below service boxes */
+  padding: 0.7rem 2rem;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff6e61); /* Gradient color */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px; /* Oval shape */
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more-btn:hover {
+  background: linear-gradient(90deg, #ff6e61, #ff758c, #ff7eb3); /* Hover effect */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff6e61);
+  color: white;
+}
